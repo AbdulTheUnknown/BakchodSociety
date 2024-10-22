@@ -5,6 +5,7 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(sensorinput,INPUT);
+  pinMode(9,OUTPUT);
 }
 
 void loop()
@@ -18,6 +19,6 @@ void loop()
     digitalWrite(9,LOW);
     delay(1000);
   }
-    else
-  digitalWrite(9,LOW);
+  else
+    digitalWrite(9,LOW);
 }
